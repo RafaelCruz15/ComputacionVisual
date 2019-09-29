@@ -9,18 +9,22 @@ void maskConv(PGraphics pg,PImage mS, int option){
   
     case 1:
       kernel = new float[][] {{ v, v, v }, { v, v, v }, { v, v, v }};
+      println("mask op1: ", frameRate);
     break;
     
     case 2:
       kernel = new float[][] {{ 0, 1, 0}, { 1, -4, 1 }, { 0, 1, 0 }};
+      println("mask op2: ", frameRate);
     break;
     
     case 3:
       kernel = new float[][] {{ 0, -1, 0 }, { -1, 5, -1 }, { 0, -1, 0 }};
+      println("mask op3: ", frameRate);
     break;
     
     case 4:
       kernel = new float[][] {{ 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 }};
+      println("mask op4: ", frameRate);
     break;
   
   
