@@ -13,6 +13,9 @@ void rgb_average(PGraphics pg, PImage mS){
       float avg_rgb = (r+g+b)/3;
       pg.pixels[i] = color(avg_rgb,avg_rgb,avg_rgb);
   } 
+  
+  println("rgb_average: ", frameRate);
+  
   pg.updatePixels();
   pg.endDraw();
  
