@@ -15,6 +15,9 @@ void luma(PGraphics pg, PImage mS){
     
       pg.pixels[i] = color(luma,luma,luma);
   } 
+  
+  println("luma: ", frameRate);
+  
   pg.updatePixels(); 
   pg.endDraw();
   
