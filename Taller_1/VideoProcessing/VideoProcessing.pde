@@ -1,40 +1,46 @@
 import processing.video.*;
-
-Capture cam;
+ 
+Movie m;
+PImage mS;
+int vScale = 4;
+int mW;
+int mH;
 PGraphics pg;
 
+ 
+boolean gotDim = false;
+ 
 void setup() {
-  size(1280, 720);
-  
-
-  String[] cameras = Capture.list();
-  
-  if (cameras.length == 0) {
-    println("There are no cameras available for capture.");
-    exit();
-  } else {
-    println("Available cameras:");
-    for (int i = 0; i < cameras.length; i++) {
-      println(cameras[i]);
-    }
-    
-    // The camera can be initialized directly using an 
-    // element from the array returned by list():
-    cam = new Capture(this, cameras[2]);
-    pg = createGraphics(cam.width, cam.height);
-    System.out.println(cam.width);
-    cam.start();     
-  }      
+  size(800, 480);
+  m = new Movie(this, "J. Cole - Everybody Dies.mp4"); 
+  m.loop();
 }
-
-void draw() {
-  if (cam.available() == true) {
-    cam.read();
+ 
+void draw() {  
+  if (!gotDim) {
+    if (mW == 0 && mH == 0) {
+      mW = m.width; 
+      mH = m.height;
+    } else if (mW > 0 && mH > 0) {
+      gotDim = true;
+      println("width: " + mW +" " + "Height: " + mH);
+    }
   }
-  image(cam, 0, 0);
-  //rgb_average(pg,cam);
-  //image(pg,0,480);
-  // The following does the same, and is faster when just drawing the image
-  // without any additional resizing, transformations, or tint.
-  //set(0, 0, cam);
+ 
+  if (gotDim) {
+    mS = m.get(); 
+    mS.resize(mW/vScale, mH/vScale); 
+    pg = createGraphics(mS.width, mS.height);
+    rgb_average(pg,mS);
+    luma(pg,mS);
+
+    image(mS, 0, 15);
+    image(pg,360,15);
+    
+    
+  }
+}
+ 
+void movieEvent(Movie m) {
+  m.read();
 }
