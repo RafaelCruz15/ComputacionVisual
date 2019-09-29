@@ -6,7 +6,8 @@ int vScale = 4;
 int mW;
 int mH;
 PGraphics pg;
-
+int click = 1;
+int option = 1;
  
 boolean gotDim = false;
  
@@ -31,11 +32,14 @@ void draw() {
     mS = m.get(); 
     mS.resize(mW/vScale, mH/vScale); 
     pg = createGraphics(mS.width, mS.height);
-    rgb_average(pg,mS);
-    luma(pg,mS);
 
     image(mS, 0, 15);
+    rgb_average(pg,mS);
     image(pg,360,15);
+    luma(pg,mS);
+    image(pg,0,200);
+    maskConv(pg,mS,option);
+    image(pg,360,200);
     
     
   }
@@ -43,4 +47,17 @@ void draw() {
  
 void movieEvent(Movie m) {
   m.read();
+}
+
+
+void mousePressed()
+{
+  
+  click = click + 1;
+  if(click > 4){
+    click = 1;
+  }
+  
+  option = click;
+  
 }
