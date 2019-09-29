@@ -19,7 +19,7 @@ Completar la tabla:
 | Integrante                      | github nick   |
 |---------------------------------|---------------|
 | Hernando Jose Caviedes Barboza  | hjcaviedesb   |
-| Nidia Alejandra Bautista Lopez  |               |
+| Nidia Alejandra Bautista Lopez  |  nabautistal  |
 | Edgar Rafael Cruz Rodriguez     | RafaelCruz15  |
 
 ## Discusión
