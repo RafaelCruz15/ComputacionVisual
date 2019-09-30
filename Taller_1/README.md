@@ -34,7 +34,9 @@ Por cada pixel del video/imagen se extrae el valor de los colores primarios de l
 Al igual que el metodo anterior, para la imagen/video, por cada pixel, se extraen los colores RGB de este, pero en lugar de sacar el promedio de estos se le da a cada color un peso, este peso se multiplicara por el valor de cada color extraido, se sumaran los tres resultados y con este resultado final se actualizara el pixel. Para el Rojo, el peso será de 0.21; para el verde, el  peso sera de 0.72; y para el azul el peso sera de 0.07, respectivamente.
 
 ### Despliegue del histograma
+Despues de obtenida la imagen a escala de grises se imprime un histograma, en donde se representa la frecuencia de las tonalidades de grisese que se pueden encontrar en la imagen.
 ### Segmentación de la imagen a partir del histograma
+Sobre el histograma obtenido apartir de la imagen en escala de grises, se selecciona un rango de interés con el mouse,como resultado de esto se mostarán los pixeles del rango seleccionado de la imagen.
 ### Medición de la eficiencia computacional para las operaciones realizadas
 
 
