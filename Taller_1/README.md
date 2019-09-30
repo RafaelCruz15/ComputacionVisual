@@ -25,6 +25,7 @@ Completar la tabla:
 ## Discusión
 
 (describa brevemente las actividades realizadas y los resultados obtenidos)
+### Escala de grises
 
 ## Entrega
 
