@@ -25,7 +25,16 @@ Completar la tabla:
 ## Discusión
 
 (describa brevemente las actividades realizadas y los resultados obtenidos)
-### Escala de grises
+### Conversión a escala de grises
+* Metodo del promedio: RGB
+Por cada pixel del video/imagen se extrae el valor de los colores primarios de la luz, RGB, despues de obtener los valores se promedian,despues con el valor obtenido se actualiza el pixel.
+* Luma
+Al igual que el metodo anterior, para la imagen/video, por cada pixel, se extraen los colores RGB de este, pero en lugar de sacar el promedio de estos se le da a cada color un peso, este peso se multiplicara por el valor de cada color extraido, se sumaran los tres resultados y con este resultado final se actualizara el pixel. Para el Rojo, el peso será de 0.21; para el verde, el  peso sera de 0.72; y para el azul el peso sera de 0.07, respectivamente
+
+### Despliegue del histograma
+### Segmentación de la imagen a partir del histograma
+### Medición de la eficiencia computacional para las operaciones realizadas
+
 
 ## Entrega
 
