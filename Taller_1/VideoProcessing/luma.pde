@@ -20,5 +20,6 @@ void luma(PGraphics pg, PImage mS){
   
   pg.updatePixels(); 
   pg.endDraw();
+  print("luma "+frameRate);
   
 }
