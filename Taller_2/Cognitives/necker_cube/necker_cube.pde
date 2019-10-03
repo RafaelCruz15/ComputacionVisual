@@ -6,7 +6,6 @@ void setup(){
   size(600, 600);      
 }
 
-
 void draw(){  
   stroke(161,26,203);
   strokeWeight(5);
