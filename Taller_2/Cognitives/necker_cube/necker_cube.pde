@@ -7,9 +7,7 @@ void setup(){
 }
 
 
-void draw(){
-  
-  
+void draw(){  
   stroke(161,26,203);
   strokeWeight(5);
   line(242, 225, 492, 225);
