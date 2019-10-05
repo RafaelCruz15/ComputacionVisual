@@ -26,7 +26,7 @@ Complete la tabla:
 
 | Ilusión            | Categoria    | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |--------------------|--------------|------------|------------------------------------|-----------------------------|
-| kanizsa triangle   | Cognitives   | https://www.illusionsindex.org/i/kanizsa-triangle           |                                    |                             |
+| kanizsa triangle   | Cognitives   | https://www.illusionsindex.org/i/kanizsa-triangle |     |        |
 | necker cube        | Cognitives   |            |                                    |                             |
 | illusory square    | Movement     |            |                                    |                             |
 | stepping_feet      | Movement     |            |                                    |                             |
