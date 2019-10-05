@@ -14,22 +14,24 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 
 Complete la tabla:
 
-| Integrante | github nick |
-|------------|-------------|
-|            |             |
+| Integrante                      | github nick   |
+|---------------------------------|---------------|
+| Hernando Jose Caviedes Barboza  | hjcaviedesb   |
+| Nidia Alejandra Bautista Lopez  |  nabautistal  |
+| Edgar Rafael Cruz Rodriguez     | RafaelCruz15  |
 
 ## Discusión
 
 1. Complete la tabla
 
-| Ilusión | Categoria | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
-|---------|-----------|------------|------------------------------------|-----------------------------|
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
+| Ilusión            | Categoria    | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
+|--------------------|--------------|------------|------------------------------------|-----------------------------|
+| kanizsa triangle   | Cognitives   | https://www.illusionsindex.org/i/kanizsa-triangle           |                                    |                             |
+| necker cube        | Cognitives   |            |                                    |                             |
+| illusory square    | Movement     |            |                                    |                             |
+| stepping_feet      | Movement     |            |                                    |                             |
+|                    |              |            |                                    |                             |
+|                    |              |            |                                    |                             |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
 
