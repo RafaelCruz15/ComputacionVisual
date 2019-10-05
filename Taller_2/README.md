@@ -34,9 +34,10 @@ Complete la tabla:
 |                    |              |            |                                    |                             |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
+
 Las referencias estudiadas son animaciones con comportamientos e ilustraciones muy parecidas a los enfoques de las ilusiones cognitivas, movimiento, geometrica y psicologicas que aparecen en páginas donde usuarios hacen aportes de cualquier tema en processing.
 
-Me gustaria mucho poder interpretar, como el ojo piensa y cree que las imagenes se mueven cuando no lo están, que hace que ocurra eso y como podriamos evitarlo.
+Nos gustaria mucho poder interpretar, como el ojo piensa y cree que las imagenes se mueven cuando no lo están, que hace que ocurra eso y como podriamos evitarlo.
 
 ## Entrega
 
