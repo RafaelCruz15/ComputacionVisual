@@ -30,7 +30,7 @@ Complete la tabla:
 | necker cube        | Cognitives   | https://www.illusionsindex.org/ir/necker-cube           |                                    |                             |
 | illusory square    | Movement     | https://www.geek.com/gallery/10-astonishing-optical-illusion-gifs/attachment/6-9/           |                                    | https://www.openprocessing.org/sketch/168628/                            |
 | stepping_feet      | Movement     | https://michaelbach.de/ot/mot-feetLin/index.html           | *Click:* Aparece y desaparece la rendija de lineas horizontales                                    |https://www.openprocessing.org/sketch/168574                            |
-|Ilusión Müller-Lyer                  |              |            |                                    |                             |
+|Ilusión Müller-Lyer | Geometrical | https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion |  *Pressed:* Desaparecen las puntas de las fechas y aparecen unas lineas paralelas|https://www.openprocessing.org/sketch/520420|
 |                    |              |            |                                    |                             |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
