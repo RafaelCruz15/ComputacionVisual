@@ -1,3 +1,6 @@
+// https://en.wikipedia.org/wiki/Poggendorff_illusion
+// https://www.openprocessing.org/sketch/140480 
+
 void setup(){
   size(400,600);
   strokeWeight(5);
