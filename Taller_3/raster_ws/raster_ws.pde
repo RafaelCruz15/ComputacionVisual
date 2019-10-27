@@ -12,13 +12,9 @@ boolean yDirection;
 // scaling is a power of 2
 int n = 4;
 
-
-//--------------------------NUEVO----------------------------------//
 // triangle's vertices color
 color[] c = {color(0, 0, 255), color(255, 0, 0), color(0, 255, 0)};
 int sft = 100;
-//--------------------------NUEVO----------------------------------//
-
 
 // 2. Hints
 boolean triangleHint = true;
@@ -26,10 +22,8 @@ boolean gridHint = true;
 boolean debug = true;
 boolean shadeHint = false;
 
-//--------------------------NUEVO----------------------------------//
 boolean antialiasing = false;
 boolean depthMap = true;
-//--------------------------NUEVO----------------------------------//
 
 // 3. Use FX2D, JAVA2D, P2D or P3D
 String renderer = P2D;
@@ -86,9 +80,6 @@ void draw() {
   triangleRaster();
   pop();
 }
-
-
-//--------------------------NUEVO----------------------------------//
 
 // Implement this function to rasterize the triangle.
 // Coordinates are given in the node system which has a dimension of 2^n
@@ -245,11 +236,6 @@ void setColor(color c) {
   stroke(c);
   fill(c);
 }
-
-//--------------------------NUEVO----------------------------------//
-
-
-
 
 void randomizeTriangle() {
   int low = -width/2;
