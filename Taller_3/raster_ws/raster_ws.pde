@@ -168,16 +168,6 @@ color depthMap(Vector p, color c) {
   return color(r, g, b);
 }
 
-/*void mouseClicked() {
-  if (mouseButton == LEFT) {
-    v1 = new Vector(mouseX-width/2, mouseY-height/2);
-  } else if (mouseButton == RIGHT) {
-    v2 = new Vector(mouseX-width/2, mouseY-height/2);
-  } else {
-    v3 = new Vector(mouseX-width/2, mouseY-height/2);
-  }
-}*/
-
 Vector[] neighbors(int i, int j) {
   Vector[] n = new Vector[8];
   for (int k = 0; k < 8; k++) {
