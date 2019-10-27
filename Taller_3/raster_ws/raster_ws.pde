@@ -116,6 +116,10 @@ void triangleRaster() {
   
 }
 
+
+//Function that determines if the "pixel" is inside the area of the Area of the triangle.
+
+
 boolean belongsToArea(Vector p, boolean softMode) {
   boolean belongsTo;
   float w[] = new float[3];
@@ -123,7 +127,7 @@ boolean belongsToArea(Vector p, boolean softMode) {
   belongsTo &= (belongsTo || softMode) ? (w[1] = edge(p, v2, v3)) >= 0 : false;
   belongsTo &= (belongsTo || softMode) ? (w[2] = edge(p, v3, v1)) >= 0 : false;
   if (belongsTo && !softMode || !belongsTo && softMode) {
-    color c = interpolateRGB(w);
+    color c = interpolateColor(w);
     if (depthMap)
       c = depthMap(p, c);
     if (softMode)
@@ -134,7 +138,9 @@ boolean belongsToArea(Vector p, boolean softMode) {
   return false;
 }
 
-color interpolateRGB(float[] edge) {
+//This Function that colors the screen according to the colors
+
+color interpolateColor(float[] edge) {
   float r = 0, g = 0, b = 0, 
     area = edge(v1, v2, v3);
   for (int i = 0; i < 3; i++) {
@@ -153,12 +159,17 @@ float distanceToEye(Vector p) {
   return norm(d, 2000, 0);
 }
 
+//Function to calculate the barycentric coordinates
+
 float edge(Vector p, Vector vi, Vector vj) {
   float px = node.location(p).x(), py = node.location(p).y(), 
     vix = node.location(vi).x(), viy = node.location(vi).y(), 
     vjx = node.location(vj).x(), vjy = node.location(vj).y();
   return (px - vix) * (vjy - viy) - (py - viy) * (vjx - vix);
 }
+
+
+//Determines the area which will be used to be colored
 
 color depthMap(Vector p, color c) {
   float normDistance = distanceToEye(p), 
@@ -167,6 +178,8 @@ color depthMap(Vector p, color c) {
     b = blue(c) * normDistance;
   return color(r, g, b);
 }
+
+//Function that visits the negihbours of the coordinates in order to establish the antialising 
 
 Vector[] neighbors(int i, int j) {
   Vector[] n = new Vector[8];
